@@ -19,10 +19,10 @@ function save() {
     if (ageValue <= 18 && parseInt(timeValue.replace(':','')) < parseInt("07:30".replace(':',''))) {
         raceNumber += 1000;
         startTime = "9:30 AM";
-    } else if (ageValue < 18 && parseInt(timeValue.replace(':','')) < parseInt("09:30".replace(':','')) > parseInt("07:31".replace(':',''))) {
+    } else if (ageValue < 18 && parseInt(timeValue.replace(':','')) > parseInt("07:31".replace(':','')) && parseInt(timeValue.replace(':','')) < parseInt("09:30".replace(':',''))) {
         raceNumber;
         startTime = "11:00 AM";
-    } else if (ageValue > 18) {
+    } else if (ageValue > 18 || parseInt(timeValue.replace(':','')) > parseInt("9:30".replace(':',''))) {
         raceNumber;
         startTime = "12:30 AM";
     } 
