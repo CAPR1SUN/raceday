@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Race Day</title>
+</head>
+<body>
+    <header>
+        <h1>Race Day</h1>
+    </header>
+    <main>
+        <div class="img-wrapper">
+        <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/486628a7f81e711.png" alt="runner">
+        </div>
+        <div class="form-wrapper" id="form-wrapper">
+        <form action="#">
+            <label for="fullName">Name</label>
+            <input type="text" name="fullName" id="fullName" autocomplete="off" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100" required>
+            <label for="time">Time of Registration</label>
+            <input type="time" name="time" id="time" required>
+            <button id="myBtn" type="button" onclick="save()">Submit</button>
+        </form>
+    </div>
+        <div class="raceNumberContainer">
+            <p id="greeting"></p>
+            <h1 id="racenumber"></h1>
+            <p id="startTime"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
